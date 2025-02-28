@@ -6,7 +6,7 @@
 /*   By: rhafidi <rhafidi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/22 18:59:27 by rhafidi           #+#    #+#             */
-/*   Updated: 2025/02/26 21:47:31 by rhafidi          ###   ########.fr       */
+/*   Updated: 2025/02/28 20:44:28 by rhafidi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ double	ft_atoi(char *str, int i, double res_1, double res_2)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		res_1 *= (res_1 * 10) + (str[i] - '0');
+		res_1 = (res_1 * 10) + (str[i] - '0');
 		i++;
 	}
 	if (str[i] == '.')
